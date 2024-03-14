@@ -14,8 +14,9 @@ let taskTable = document.getElementById("taskTable");
 function handleSubmission(event) {
     event.preventDefault();
     // Get form input values
-    const taskName = taskNameInput.value;
-    const taskDescription = taskDescriptionInput.value;
+    let taskName = document.getElementById ('taskName').value;
+    let taskDescription = document.getElementById ('taskDescription').value;
+    let taskDeadline = document.getElementById ('taskDeadline').value;
 
     // Validate input fields
     if (!taskName || !taskDescription) {
